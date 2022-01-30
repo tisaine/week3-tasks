@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Week3 tasks</title>
+
+  <!--Mouse position task
+<script>
+    window.onload = function()
+    {   
+        window.onclick = function(e)
+        {
+            var evt = window.event || e;
+            document.getElementById("result").innerHTML = "Mouse position is: (" + evt.clientX + "," + evt.clientY + ")";
+        }
+    }   
+</script>
+<body>
+    <div id="result">Your position is: </div>
+</body>
+...mouse position ends here-->
+
+
+<!--The Touch and Start game - DON*T WORK
+<script>
+    var button1 = document.querySelector("button");
+
+    button.addEventListener("touchStart", onlyTouch, false);
+
+    function onlyTouch(ev){
+        console.log("Touch event is started here");
+        ev.preventDefault();
+    }
+    button1.addEventListener("click", onlyClick, false);
+
+    function onlyClick(ev){
+        console.log("Click event is started here");
+        ev.preventDefault();
+        console.log("Here's what happens after the event");
+    }
+</script>
+<body>
+    <h1>Touch and Click event magic</h1>
+    <button id="button">Click here</button>
+</body>
+...the Touch and Start ends -->
+
+<!--HUrry up time task-->
+<script>  
+    function continuousDisplay(){        
+        setInterval(displayDate,15000);        
+    }
+
+    function displayDate(){
+    var d = new Date();
+    var x = d.toLocaleTimeString();
+    document.getElementById("timeinfo").innerHTML = "Hurry up! It's: " + x  + " o'clock." ;
+    }
+
+</script>
+<body onload="continuousDisplay()">
+    Tik tok, tik tok...<br/>
+    <p id="timeinfo"></p>
+</body>
+<!--hurry up time task ends here-->
+<head>
+</html>
